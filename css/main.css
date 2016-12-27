@@ -136,7 +136,7 @@ nav li a, nav li i {
   color: #DEDFDF;
 }
 
-.btn:active, .btn:hover {
+.btn:active, .btn:hover,  {
   background-color: #BF6943;
 }
 
@@ -176,6 +176,9 @@ nav li:hover {
   background-color: #4F5D75;
   -webkit-transition: background-color 0.75s ease;
   transition: background-color 0.75s ease;
+}
+nav li.active{
+  background-color: #4F5D75;
 }
 
 nav a {
@@ -420,8 +423,8 @@ PORTFOLIO TABs
 
 .tab-list li:hover {
   background-color: #DEDFDF;
-  -webkit-transition: background-color .75s ease;
-  transition: background-color .75s ease;
+  -webkit-transition: background-color .25s ease;
+  transition: background-color .25s ease;
 }
 
 .tab-list li:not(.active):hover h3, .tab-list li:not(.active):hover i {
@@ -440,8 +443,8 @@ PORTFOLIO TABs
   background-color: #DEDFDF;
   color: #4f5d75;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-  -webkit-transition: text-shadow .75s ease;
-  transition: text-shadow .75s ease;
+  -webkit-transition: text-shadow .25s ease;
+  transition: text-shadow .25s ease;
 }
 
 .tab-list li.active h3, .tab-list li.active i {
