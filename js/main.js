@@ -1,6 +1,6 @@
 Modernizr.load({
   test: Modernizr.touch,
-  yep : 'js/vendor/touchSwipe.js',
+  yep : 'js/vendor/jquery.touchSwipe.min.js',
 });
 $(document).ready(function() {
     /*//////////////////////////////////////////////////
