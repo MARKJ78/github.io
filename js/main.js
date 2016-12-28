@@ -1,3 +1,7 @@
+Modernizr.load({
+  test: Modernizr.touch,
+  yep : 'js/vendor/touchSwipe.js',
+});
 $(document).ready(function() {
     /*//////////////////////////////////////////////////
     /                                                  /
@@ -53,11 +57,7 @@ $(document).ready(function() {
     /                                                  /
     /                                                  /
     //////////////////////////////////////////////////*/
-if (Modernizr.touch) { 
-  alert('Touch Screen');
-} else { 
-  alert('No Touch Screen');
-}
+
     function showAccordion() {
         if ($(window).width() < 896) {
             $(".condensed").accordion({ //jquery UI accordion
