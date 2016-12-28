@@ -31,3 +31,10 @@ keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 window.addEventListener('keydown', getKeydown); 
 letter.forEach(key => key.addEventListener('click', getClick)); 
 
+$(function(){
+  $( ".key" ).bind( "tap", tapHandler );
+ 
+  function tapHandler( event ){
+     $( this ).click();
+  }
+});
