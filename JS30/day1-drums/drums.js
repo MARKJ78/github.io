@@ -30,3 +30,4 @@ const letter = document.querySelectorAll('kbd');
 keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 window.addEventListener('keydown', getKeydown); 
 letter.forEach(key => key.addEventListener('click', getClick)); 
+
