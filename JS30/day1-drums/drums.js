@@ -30,7 +30,7 @@ const letter = document.querySelectorAll('kbd');
 keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 window.addEventListener('keydown', getKeydown); 
 letter.forEach(key => key.addEventListener('click', getClick)); 
-
+var $ = jQuery;
 $(function(){
   $( ".key" ).bind( "tap", tapHandler );
  
