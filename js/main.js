@@ -229,7 +229,7 @@ $(function(){
  
   // Callback function references the event target and adds the 'swipeleft' class to it
   function swipeleftHandler( event ){
-     $( ".last" ).click();
+     $( ".next" ).click();
   }
 });
 $(function(){
@@ -238,7 +238,7 @@ $(function(){
  
   // Callback function references the event target and adds the 'swipeleft' class to it
   function swipeRightHandler( event ){
-     $( ".next" ).click();
+     $( ".last" ).click();
   }
 });
 
