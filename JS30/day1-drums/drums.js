@@ -29,12 +29,13 @@ const keys = document.querySelectorAll('.key'); //select all keys
 const letter = document.querySelectorAll('kbd');
 keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 window.addEventListener('keydown', getKeydown); 
-letter.forEach(key => key.addEventListener('click', getClick)); 
-var $ = jQuery;
+letter.forEach(key => key.addEventListener('click', getClick));
+
+
 $(function(){
-  $( ".key" ).bind( "tap", tapHandler );
+  $('.key').bind('tap',tapHandler);
  
   function tapHandler( event ){
-     $( this ).click();
+     $(this).click();
   }
 });
