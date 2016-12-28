@@ -1,8 +1,21 @@
-Modernizr.load({
-  test: Modernizr.touch,
-  yep : 'js/vendor/jquery.touchSwipe.min.js',
+$(function(){
+  // Bind the swipeleftHandler callback function to the swipe event on div.box
+  $( ".slide" ).on( "swipeleft", swipeleftHandler );
+ 
+  // Callback function references the event target and adds the 'swipeleft' class to it
+  function swipeleftHandler( event ){
+     $( ".last" ).click();
+  }
 });
-$(document).ready(function() {
+$(function(){
+  // Bind the swipeleftHandler callback function to the swipe event on div.box
+  $( ".slide" ).on( "swiperight", swipeRightHandler );
+ 
+  // Callback function references the event target and adds the 'swipeleft' class to it
+  function swipeRightHandler( event ){
+     $( ".next" ).click();
+  }
+});
     /*//////////////////////////////////////////////////
     /                                                  /
     /                                                  /
