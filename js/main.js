@@ -1,21 +1,3 @@
-$(function(){
-  // Bind the swipeleftHandler callback function to the swipe event on div.box
-  $( ".slide" ).on( "swipeleft", swipeleftHandler );
- 
-  // Callback function references the event target and adds the 'swipeleft' class to it
-  function swipeleftHandler( event ){
-     $( ".last" ).click();
-  }
-});
-$(function(){
-  // Bind the swipeleftHandler callback function to the swipe event on div.box
-  $( ".slide" ).on( "swiperight", swipeRightHandler );
- 
-  // Callback function references the event target and adds the 'swipeleft' class to it
-  function swipeRightHandler( event ){
-     $( ".next" ).click();
-  }
-});
 $(document).ready(function() {
     /*//////////////////////////////////////////////////
     /                                                  /
@@ -239,6 +221,26 @@ $('.slider').each(function() {
     advance();
 });
 
+//swipe for slider - uses jquery mobile
+
+$(function(){
+  // Bind the swipeleftHandler callback function to the swipe event on div.box
+  $( ".slide" ).on( "swipeleft", swipeleftHandler );
+ 
+  // Callback function references the event target and adds the 'swipeleft' class to it
+  function swipeleftHandler( event ){
+     $( ".last" ).click();
+  }
+});
+$(function(){
+  // Bind the swipeleftHandler callback function to the swipe event on div.box
+  $( ".slide" ).on( "swiperight", swipeRightHandler );
+ 
+  // Callback function references the event target and adds the 'swipeleft' class to it
+  function swipeRightHandler( event ){
+     $( ".next" ).click();
+  }
+});
 
 /*//////////////////////////////////////////////////
 /                                                  /
