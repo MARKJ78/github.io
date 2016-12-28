@@ -4,6 +4,7 @@ function getKeydown(e){
     const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
     if (!audio) return; //stop function working on keys we haven't got in the app
     playSound(audio, key);
+    
 }
 
 function getClick(e){
@@ -36,6 +37,7 @@ $(function(){
   $('.key').bind('tap',tapHandler);
  
   function tapHandler( event ){
+      alert(this);
      $(this).click();
   }
 });
