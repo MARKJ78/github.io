@@ -37,7 +37,6 @@ $(function(){
   $('.key').bind('tap',tapHandler);
  
   function tapHandler( event ){
-      alert(this);
      $(this).click();
   }
 });
