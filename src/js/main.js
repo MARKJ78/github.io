@@ -1,9 +1,5 @@
-
-require('../src/js/vendor/modernizr-2.8.3.min.js');
-require('../src/js/vendor/jquery-3.1.1.js');
-require('../src/js/vendor/jquery.mobile.custom.min.js');
-require('../src/js/vendor/jquery-ui.min.js');
 require('../css/main.scss');
+
 $(document).ready(function() {
     /*//////////////////////////////////////////////////
     /                                                  /

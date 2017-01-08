@@ -22,5 +22,12 @@ module.exports = {
                 loader: 'file?hash=sha512&digest=hex&name=[hash].[ext]!image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
             }
         ]
-    }
+    },
+    /*plugins: [
+       new webpack.ProvidePlugin({
+           $: "jquery",
+           jQuery: "jquery"
+       })
+   ]*/
+
   };
