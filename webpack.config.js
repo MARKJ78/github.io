@@ -1,5 +1,4 @@
 var path = require('path'); //npm init includes 'path' module
-
 module.exports = {
     entry: './src/js/main.js',
     output: {
@@ -24,4 +23,4 @@ module.exports = {
             }
         ]
     }
-};
+  };
