@@ -1,3 +1,4 @@
+require('../css/main.scss');
 $(document).ready(function() {
     /*//////////////////////////////////////////////////
     /                                                  /
@@ -226,7 +227,7 @@ $('.slider').each(function() {
 $(function(){
   // Bind the swipeleftHandler callback function to the swipe event on div.box
   $( ".slide" ).on( "swipeleft", swipeleftHandler );
- 
+
   // Callback function references the event target and adds the 'swipeleft' class to it
   function swipeleftHandler( event ){
      $( ".next" ).click();
@@ -235,7 +236,7 @@ $(function(){
 $(function(){
   // Bind the swipeleftHandler callback function to the swipe event on div.box
   $( ".slide" ).on( "swiperight", swipeRightHandler );
- 
+
   // Callback function references the event target and adds the 'swipeleft' class to it
   function swipeRightHandler( event ){
      $( ".last" ).click();
