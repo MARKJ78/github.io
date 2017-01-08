@@ -4,7 +4,7 @@ module.exports = {
     entry: './src/js/main.js',
     output: {
         path: 'dist',
-        filename: 'bundle.js',
+        filename: 'bundle.js'
     },
     module: {
         loaders: [
@@ -18,13 +18,10 @@ module.exports = {
             }, {
                 test: /\.scss$/,
                 loader: 'style-loader!css-loader!sass-loader'
-            },     {
-        test: /\.(jpe?g|png|gif|svg)$/i,
-        loaders: [
-            'file?hash=sha512&digest=hex&name=[hash].[ext]',
-            'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
-        ]
-    }
+            }, {
+                test: /\.(jpe?g|png|gif|svg)$/i,
+                loader: 'file?hash=sha512&digest=hex&name=[hash].[ext]!image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
+            }
         ]
     }
 };
