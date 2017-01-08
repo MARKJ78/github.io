@@ -1,5 +1,4 @@
 require('../css/main.scss');
-
 $(document).ready(function() {
     /*//////////////////////////////////////////////////
     /                                                  /
