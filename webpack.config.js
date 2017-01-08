@@ -1,4 +1,3 @@
-var path = require('path'); //npm init includes 'path' module
 module.exports = {
     entry: './src/js/main.js',
     output: {
@@ -20,18 +19,7 @@ module.exports = {
             }, {
                 test: /\.(jpe?g|png|gif|svg)$/i,
                 loader: 'file?hash=sha512&digest=hex&name=[hash].[ext]!image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
-            }, {
-                test: /\.html$/,
-                loader: 'raw-loader!html-minifier-loader'
             }
-        ]
-    },
-    'html-minifier-loader': {
-    removeComments: true,
-    collapseWhitespace: true,
-    conservativeCollapse: true,
-    preserveLineBreaks: false
-}
-
-
-};
+          ]
+        }
+    };
