@@ -10,11 +10,6 @@ HEADERS & BACKGROUND ---- lilac/blue #4F5D75
 
 */
 
-@font-face {
-  font-family: 'biloxi';
-  src: url('fonts/biloxi_script.ttf');
-}
-
 html, body {
   margin: 0;
   padding: 0;
@@ -136,7 +131,7 @@ nav li a, nav li i {
   color: #DEDFDF;
 }
 
-.btn:active, .btn:hover,  {
+.btn:active, .btn:hover, {
   background-color: #BF6943;
 }
 
@@ -177,7 +172,8 @@ nav li:hover {
   -webkit-transition: background-color 0.75s ease;
   transition: background-color 0.75s ease;
 }
-nav li.active{
+
+nav li.active {
   background-color: #4F5D75;
 }
 
