@@ -1,4 +1,3 @@
-require('../css/main.scss');
 $(document).ready(function() {
     /*//////////////////////////////////////////////////
     /                                                  /
@@ -44,7 +43,7 @@ $(document).ready(function() {
               .animate({
                   width: $(this).data("origWidth") // or + "%" if fluid
               }, 1200);
-      });*/
+      });*///DO NOT DELETE
 
 
     /*//////////////////////////////////////////////////
@@ -142,7 +141,7 @@ $('.slider').each(function() {
     var buttonArray = [];
     var currentIndex = 0;
     var timeout;
-    
+
     //Slider move function
     function move(newIndex) {
         var animateLeft, slideLeft;
