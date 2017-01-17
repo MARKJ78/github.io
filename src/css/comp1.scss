@@ -1,0 +1,9 @@
+.comp1 {
+  padding: 16px 5px;
+  border-bottom: 1px dashed #bbb;
+  display: flex;
+
+  &:hover {
+    background: #eee;
+  }
+}
