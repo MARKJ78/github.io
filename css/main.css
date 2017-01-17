@@ -10,11 +10,6 @@ HEADERS & BACKGROUND ---- lilac/blue #4F5D75
 
 */
 
-@font-face {
-  font-family: 'biloxi';
-  src: url('fonts/biloxi_script.ttf');
-}
-
 html, body {
   margin: 0;
   padding: 0;
@@ -91,7 +86,6 @@ i {
 hr {
   border: 0;
   height: 1px;
-  background-image: -webkit-linear-gradient(left, #DEDFDF, #8E97A7, #DEDFDF);
   background-image: linear-gradient(to right, #DEDFDF, #8E97A7, #DEDFDF);
   margin: 0;
 }
@@ -111,8 +105,6 @@ nav li a, nav li i {
 }
 
 .btn-container {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 0 100%;
   flex: 1 0 100%;
 }
 
@@ -136,7 +128,7 @@ nav li a, nav li i {
   color: #DEDFDF;
 }
 
-.btn:active, .btn:hover,  {
+.btn:active, .btn:hover, {
   background-color: #BF6943;
 }
 
@@ -174,10 +166,10 @@ nav li {
 
 nav li:hover {
   background-color: #4F5D75;
-  -webkit-transition: background-color 0.75s ease;
   transition: background-color 0.75s ease;
 }
-nav li.active{
+
+nav li.active {
   background-color: #4F5D75;
 }
 
@@ -224,39 +216,22 @@ Landing Header
 ////////////////////////////////////*/
 
 .intro-container {
-  background: -webkit-linear-gradient(#8E97A7, #4F5D75);
   background: linear-gradient(#8E97A7, #4F5D75);
   color: #DEDFDF;
 }
 
 .intro-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   min-height: calc(100vh - 51px);
 }
 
 .intro {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   position: relative;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   text-align: center;
 }
@@ -282,7 +257,6 @@ Landing Header
 }
 
 .fadeIn {
-  -webkit-animation-delay: .75s;
   animation-delay: .75s;
 }
 
@@ -332,10 +306,7 @@ PROGRESS BAR
 }
 
 .progress-bar-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
   justify-content: space-around;
   position: absolute;
   list-style: none;
@@ -396,20 +367,13 @@ PORTFOLIO TABs
   list-style: none;
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
   position: relative;
   width: 100%;
 }
 
 .tab-list li {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 22%;
   flex: 1 22%;
   text-align: center;
   padding: .5rem 0;
@@ -423,13 +387,11 @@ PORTFOLIO TABs
 
 .tab-list li:hover {
   background-color: #DEDFDF;
-  -webkit-transition: background-color .25s ease;
   transition: background-color .25s ease;
 }
 
 .tab-list li:not(.active):hover h3, .tab-list li:not(.active):hover i {
   color: #4f5d75;
-  -webkit-transition: color .25s ease;
   transition: color .25s ease;
 }
 
@@ -443,14 +405,12 @@ PORTFOLIO TABs
   background-color: #DEDFDF;
   color: #4f5d75;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-  -webkit-transition: text-shadow .25s ease;
   transition: text-shadow .25s ease;
 }
 
 .tab-list li.active h3, .tab-list li.active i {
   color: #4f5d75;
   font-weight: bold;
-  -webkit-transition: color 0.25s ease;
   transition: color 0.25s ease;
 }
 
@@ -513,14 +473,8 @@ HEADERS & BACKGROUND ---- lilac/blue #4F5D75
 
 .slide-control {
   width: 100%;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   padding-bottom: 1rem;
 }
@@ -559,7 +513,6 @@ HEADERS & BACKGROUND ---- lilac/blue #4F5D75
 
 .last:hover, .next:hover {
   background-color: #8E97A7;
-  -webkit-transition: background-color 0.75s ease;
   transition: background-color 0.75s ease;
 }
 
@@ -591,20 +544,10 @@ PORTFOLIO ITEM / SLIDER CONTENT
 }
 
 .project-details-container {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 100%;
   flex: 1 1 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-pack: distribute;
   justify-content: space-around;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -614,18 +557,12 @@ PORTFOLIO ITEM / SLIDER CONTENT
 }
 
 .project-pic-container {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 100%;
   flex: 1 1 100%;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
 }
 
 .project-pic {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 100%;
   flex: 1 1 100%;
   max-width: 75%;
   text-align: center;
@@ -634,22 +571,13 @@ PORTFOLIO ITEM / SLIDER CONTENT
 
 @media screen and (min-width: 56rem) {
   .main-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
   }
   .project-pic-container {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 45%;
     flex: 1 1 45%;
   }
   .project-details-container {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 45%;
     flex: 1 1 45%;
   }
   .project-title {
@@ -717,64 +645,34 @@ PORTFOLIO ITEM / ACCORDION
 
 .footer {
   background-color: #DEDFDF;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 .about-container {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 100%;
   flex: 1 1 100%;
   margin: auto;
-  -webkit-box-ordinal-group: 2;
-  -ms-flex-order: 1;
   order: 1;
 }
 
 .form-container {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 100%;
   flex: 1 1 100%;
-  -webkit-box-ordinal-group: 3;
-  -ms-flex-order: 2;
   order: 2;
 }
 
 @media all and (min-width: 48rem) {
   .footer {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
     align-items: flex-start;
   }
   .form-container {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 55%;
     flex: 1 55%;
-    -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
     order: 1;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
     align-items: flex-start;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
     justify-content: flex-start;
   }
   .about-container {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 35%;
     flex: 1 35%;
-    -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
     order: 2;
     margin: 0 auto;
     text-align: left;
@@ -836,36 +734,23 @@ HEADERS & BACKGROUND ---- lilac/blue #4F5D75
 
 .band {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .band1 {
-  background: -webkit-linear-gradient(left, #4F5D75, #8E97A7);
   background: linear-gradient(to right, #4F5D75, #8E97A7);
 }
 
 .band2 {
-  background: -webkit-linear-gradient(right, #4F5D75, #8E97A7);
   background: linear-gradient(to left, #4F5D75, #8E97A7);
 }
 
 .sub-band-1 {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 100%;
   flex: 1 100%;
   font-weight: normal;
   color: #DEDFDF;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -875,23 +760,15 @@ HEADERS & BACKGROUND ---- lilac/blue #4F5D75
 }
 
 .sub-band-2 {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 100%;
   flex: 1 100%;
   font-weight: normal;
   color: #DEDFDF;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
 }
 
 .social-icons {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   list-style: none;
-  -ms-flex-pack: distribute;
   justify-content: space-around;
   text-align: center;
   margin: 0;
@@ -914,20 +791,13 @@ HEADERS & BACKGROUND ---- lilac/blue #4F5D75
 @media all and (min-width: 48rem) {
   /*aligns band horizontally over 450px */
   .band {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
     position: relative;
   }
   .sub-band-1 {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 48%;
     flex: 1 48%;
   }
   .sub-band-2 {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 48%;
     flex: 1 48%;
   }
 }
