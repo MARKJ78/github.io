@@ -128,7 +128,7 @@ nav li a, nav li i {
   color: #DEDFDF;
 }
 
-.btn:active, .btn:hover, {
+.btn.active, .btn:hover, {
   background-color: #BF6943;
 }
 
