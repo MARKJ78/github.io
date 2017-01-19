@@ -1,0 +1,74 @@
+/*////////////////////////////////////
+
+Navigation
+
+////////////////////////////////////*/
+
+.logo {
+  float: left;
+  padding: .75rem;
+  font-size: 1.5rem;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+}
+
+nav {
+  display: table;
+  width: 100%;
+  position: relative;
+}
+
+nav ul {
+  float: right;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  padding: 1rem .75rem;
+}
+
+nav li:hover {
+  background-color: #4F5D75;
+  transition: background-color 0.75s ease;
+}
+
+nav li.active {
+  background-color: #4F5D75;
+}
+
+nav a {
+  display: block;
+  padding: 0;
+}
+
+@media screen and (min-width: 48rem) {
+  .mobile-only {
+    display: none;
+  }
+}
+
+.menu-button {
+  display: none;
+}
+
+@media screen and (max-width:47.9999rem) {
+  .menu-button {
+    display: block;
+    padding: 1rem;
+    float: right;
+  }
+  nav ul li {
+    display: block;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  nav ul {
+    display: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
