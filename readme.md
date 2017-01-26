@@ -1,1 +1,1 @@
-Please go [here](/http://mark-jones.surge.sh/) to view portfolio
+Please go [here](http://mark-jones.surge.sh/) to view portfolio
